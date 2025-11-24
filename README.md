@@ -9,4 +9,4 @@
 2. Dos
 3. Tres
 ---
-esto es una basura
+Esta es una prueba de git desde Windows
