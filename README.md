@@ -1,2 +1,11 @@
 # IFCD0210
-Curso desarrollo web
+## Ejercicios del curso desarrollo web
+### Introducción al HTML
+- Uno
+- Dos
+- Tres
+---
+1. Uno
+2. Dos
+3. Tres
+---
