@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1, 5 rem;
+    font-family: helvetica;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(239, 239, 239);
+}
+
+header {
+    background-color: withe;
+    font-family: Helvetica;
+
+}
+
+.arriba {
+    color: rgb(205, 244, 244);
+    height: 100%;
+    background-color: #03a9f4;
+    padding: 11px;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.caja1 {
+    background-color: #81d4fa;
+    border: 2px solid rgba(231, 227, 227, 0);
+    -webkit-box-shadow: 4px 6px 7px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 4px 6px 7px 2px rgba(0, 0, 0, 0.24);
+    margin: 16px;
+    margin-left: 320px;
+    padding: 1rem;
+    position: relative;
+    height: 130px;
+    width: 600px;
+}
+
+.profile {
+    border-radius: 50%;
+    -webkit-box-shadow: 4px 6px 7px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 4px 6px 7px 2px rgba(0, 0, 0, 0.24);
+    position: absolute;
+    top: 15px;
+    width: 115px;
+
+
+}
+
+h1 {
+    color: rgb(62, 62, 62);
+    font-weight: normal;
+    margin-left: 125px;
+    font-size: 50px;
+}
+
+.intro {
+    max-width: 200px;
+    margin-left: 125px;
+    margin-top: 8px;
+}
+
+.hache2 {
+    font-weight: normal;
+    color: rgb(69, 69, 69);
+    margin-left: -14px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.cajas {
+    margin-left: -10px;
+}
+
+.caja2 {
+    background-color: #81d4fa;
+    -webkit-box-shadow: 4px 6px 8px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 6px 8px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.ultimo {
+    font-size: 12px;
+    margin-left: 160px;
+}
+.boton {
+    background-color: white;
+    border-radius: 3px;
+    padding: 4px;
+}
+.enlaces {
+    font-size: px;
+}
