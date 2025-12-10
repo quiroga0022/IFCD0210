@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fira+Mono:wght@400;500;700&family=Playwrite+DK+Loopet:wght@100..400&family=Share+Tech&display=swap');
+ * {
+     font-family:'Fira Mono';
+     font-size: 16px;
+     background-color: black;
+     color: white;
+     margin: 0;
+     padding: 0;
+ }
+
+ .cabecera {
+     height: 10vh;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     background-color: rgb(27, 27, 27);
+ }
+
+ a {
+     color: white;
+     text-decoration: none;
+     background-color: rgb(34, 33, 33);
+ }
+
+ .caja1 {
+     margin-left: 150px;
+ }
+
+ .caja2 {
+     margin-right: 150px;
+ }
+
+ .centro {
+     text-align: center;
+     height: 80vh;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     background-color: rgb(31, 31, 31);
+ }
+
+ h1 {
+     font-size: 50px;
+          background-color: rgb(31, 31, 31);
+ }
+
+ .pie {
+     text-align: center;
+     height: 10vh;
+     padding-top: 10px;
+     background-color: rgb(27, 27, 27);
+ }
+ 
