@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            background-color: rgb(229, 237, 202);
+            color: rgb(50, 50, 50);
+        }
+
+        .cabecera {
+            display: flex;
+            padding-bottom: 4rem;
+            justify-content: space-between;
+        }
+
+        .cabecera p {
+            font-size: 1.9rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .cabecera a {
+            text-decoration: none;
+            color: rgb(50, 50, 50);
+        }
+
+        .contenedor {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5vw;
+
+        }
+
+        .contenedor p {
+            font-size: 2rem;
+
+        }
+
+        .tarjeta h2 {
+            font-size: 3rem;
+        }
+
+        .tarjeta {
+            background-color: white;
+            width: 50rem;
+            height: 50rem;
+            margin: 2vw;
+            border-radius: 12px;
+        }
+
+        .imagen img {
+            width: 100%;
+            border-radius: 12px;
+            background-size: auto;
+        }
+
+        .descripcion {
+            margin: 2rem;
+        }
+
+        .intro {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: 2rem;
+            width: 45vw;
+            margin-left: 25vw;
+            padding-top: 10vh;
+        }
+
+        .pie {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 2rem;
+        }
+        .pie a {
+                        color: rgb(50, 50, 50);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="cabecera">
+            <div>
+                <p>LOGO</p>
+            </div>
+            <div class>
+                <p><a href="#">LIBRO | </a><a href="#"> TARJETAS | </a><a href="#">INFORMACIÓN | </a><a
+                        href="#">TIENDA</a></p>
+            </div>
+            <div>
+                <p>IDIOMA</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="intro">
+            <p>Laws of UX es una colección de mejores prácticas que los diseñadores pueden considerar al crear
+                interfaces de usuario.</p>
+        </div>
+        <div class="contenedor">
+
+            <div class="tarjeta">
+                <div class="imagen">
+                    <img src="img/Sin título3.jpg" alt="foto3">
+                </div>
+                <div class="descripcion">
+                    <h2>
+                        Atencion Selectiva
+                    </h2>
+                    <p>
+                        El proceso de centrar nuestra atención solo en un subconjunto de los estímulos en el entorno —
+                        normalmente aquellos relacionados con nuestros objetivos.
+
+                    </p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen">
+                    <img src="img/Sin título.jpg" alt="foto1">
+                </div>
+                <div class="descripcion">
+                    <h2>
+                        Carga Cognitiva
+                    </h2>
+                    <p>
+                        La cantidad de recursos mentales necesarios para entender e interactuar con una interfaz.
+
+                    </p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen">
+                    <img src="img/Sin título2.jpg" alt="foto2">
+                </div>
+                <div class="descripcion">
+                    <h2>
+                        Efecto de Estética-Usabilidad
+                    </h2>
+                    <p>
+                        Los usuarios a menudo perciben un diseño estéticamente agradable como un diseño que es más útil.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+       <div class="pie">
+        <div>
+            <p>Laws of UX © Jon Yablonski 2025 • Made with ♥ alongside Lena</p>
+        </div>
+        <div>
+            <p><a href="#">Contacto |</a><a href="#"> Licencia</a></p>
+        </div>
+       </div>
+    </footer>
+</body>
+
+</html>

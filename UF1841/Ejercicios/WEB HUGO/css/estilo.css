@@ -51,6 +51,7 @@
      height: 10vh;
      padding-top: 10px;
      background-color: rgb(80, 80, 80);
+     max-height: 1rem;
  }
  .about {
      min-height: 80vh;
@@ -85,4 +86,10 @@ p {
     display: flex;
     flex-direction: column;
 
+}
+.caja4 {
+    background-color: black;
+    height: 8vw;
+    margin: 1rem 1rem;
+    width: 111vh;
 }
