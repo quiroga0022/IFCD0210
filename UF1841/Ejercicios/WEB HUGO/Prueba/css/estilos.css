@@ -1,0 +1,87 @@
+* {
+    background-color: rgb(230, 236, 236);
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 1000px;
+    height: 1000px;
+    /* background-color: rgb(255, 254, 254); */
+}
+.body {
+    /* background-color: rgb(140, 136, 136); */
+}
+
+.contenedor img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.uno {
+    grid-area: 1 / 1 / 5 / 5;
+    border: 1px solid blue;
+    border-radius: 6px;
+}
+
+.dos {
+    grid-area: 5 / 1 / 9 / 5;
+    border: 1px solid blue;
+    border-radius: 6px;
+
+}
+
+.tres {
+    grid-area: 9 / 1 / 13 / 6;
+    border: 1px solid blue;
+    border-radius: 6px;
+
+}
+
+.cuatro {
+    grid-area: 5 / 5 / 9 / 9;
+    border: 1px solid blue;
+    border-radius: 6px;
+
+}
+
+.cinco {
+    grid-area: 9 / 6 / 13 / 9;
+    border: 1px solid blue;
+    border-radius: 6px;
+
+}
+
+.seis {
+    grid-area: 1 / 5 / 5 / 7;
+    border: 1px solid blue;
+    border-radius: 6px;
+
+}
+
+.siete {
+    grid-area: 1 / 7 / 5 / 9;
+    border: 1px solid blue;
+    border-radius: 6px;
+
+}
+
+.ocho {
+    grid-area: 1 / 9 / 7 / 12;
+    border: 1px solid blue;
+    border-radius: 6px;
+
+}
+
+.nueve {
+    grid-area: 7 / 9 / 13 / 12;
+    border: 1px solid blue;
+    border-radius: 6px;
+
+}

@@ -7,23 +7,42 @@
     <style>
         .contenedor {
             display: grid;
-            grid-template-columns: 1fr 2fr 2fr 1fr;
+            gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-rows: 200px 300px; */
+
         }
-        .item {
-            height: 30px;
+        .grid-item {
             background-color: aquamarine;
             border: 1px solid blue;
+        }
+        .cabecera {
+            background-color: rgb(56, 56, 114);
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            grid-column: span 3;
+            padding-bottom: 50px;
+            text-align: center;
+            
+        }
+        .segundo {
+            background-color: rgb(203, 128, 128);
+            /* grid-row-start: 2;
+            grid-row-end: 5; */
+            grid-row: 2/ span 3;
         }
     </style>
 </head>
 <body>
     <div class="contenedor">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
+        <div class="grid-item cabecera">Elemento 1</div>
+        <div class="grid-item segundo">Elemento 2</div>
+        <div class="grid-item">Elemento 3</div>
+        <div class="grid-item">Elemento 4</div>
+        <div class="grid-item">Elemento 5</div>
+        <div class="grid-item">Elemento 6</div>
+        <div class="grid-item">Elemento 7</div>
+        <div class="grid-item ocho">Elemento 8</div>        
         
     </div>
 </body>

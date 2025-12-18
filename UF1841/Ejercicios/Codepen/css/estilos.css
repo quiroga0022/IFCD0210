@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 16px;
+    font-family: 'Inter';
+    background-color: rgb(221, 220, 219);
+
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 25px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.uno {
+        /* border: 1px solid blue; */
+        grid-column-start: 1;
+        grid-column-end: 7;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 12px;
+
+}
+.start {
+    display: flex;
+    width: 30rem;
+    margin-top: 5rem;
+}
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.dos {
+        /* border: 1px solid blue; */
+        grid-column-start: 1;
+        grid-column-end: 4; 
+                background-color: white;
+                        border-radius: 12px;
+
+
+
+}
+.tres {
+        /* border: 1px solid blue; */
+        grid-column-start: 4;
+        grid-column-end: 7;
+                background-color: white;
+                        border-radius: 12px;
+
+
+
+}
+.cuatro {
+        /* border: 1px solid blue; */
+        grid-column-start: 1;
+        grid-column-end: 4;
+                background-color: white;
+                        border-radius: 12px;
+
+
+
+
+}
+.cinco  {
+        /* border: 1px solid blue; */
+        grid-column-start: 4;
+        grid-column-end: 7;
+                background-color: white;
+                        border-radius: 12px;
+
+
+}
+.seis {
+        /* border: 1px solid blue; */
+        grid-column-start: 1;
+        grid-column-end: 3;
+                background-color: white;
+                        border-radius: 12px;
+
+
+}
+.siete {
+        /* border: 1px solid blue; */
+        grid-column-start: 3;
+        grid-column-end: 5;
+                background-color: white;
+                        border-radius: 12px;
+
+
+}
+.ocho {
+        /* border: 1px solid blue; */
+        grid-column-start: 5;
+        grid-column-end: 7;
+                background-color: white;
+                        border-radius: 12px;
+
+
+}
+.nueve {
+        /* border: 1px solid blue; */
+        grid-column-start: 1;
+        grid-column-end: 3;
+                background-color: white;
+                        border-radius: 12px;
+
+
+}
+.diez {
+        /* border: 1px solid blue; */
+        grid-column-start: 3;
+        grid-column-end: 5;
+                background-color: white;
+                        border-radius: 12px;
+
+
+}
+.once {
+        /* border: 1px solid blue; */
+        grid-column-start: 5;
+        grid-column-end: 7;
+                background-color: white;
+                        border-radius: 12px;
+
+
+}
+.contenedor img {
+    width: 100%;
+    border-radius: 12px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor {
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4,1fr);
+
+        }
+
+        .item {
+            /* background-color: rgb(161, 161, 210); */
+            border: 1px solid red;
+            border-radius: 3px;
+        }
+        .uno {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .ocho {
+            grid-column: 3 / span 1;
+            grid-row: 3 / span 2;
+        }
+        .grande {
+            background-color: rgb(217, 232, 232);
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grande">
+        <div class="contenedor">
+            <div class="item uno">1</div>
+            <div class="item dos">2</div>
+            <div class="item tres">3</div>
+            <div class="item cuatro">4</div>
+            <div class="item cinco">5</div>
+            <div class="item seis">6</div>
+            <div class="item siete">7</div>
+            <div class="item ocho">8</div>
+
+        </div>
+    </div>
+</body>
+
+</html>
