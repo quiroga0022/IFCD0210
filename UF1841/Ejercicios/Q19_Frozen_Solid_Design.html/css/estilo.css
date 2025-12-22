@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+}
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15rem;
+    background-color: rgba(25, 26, 26, 0.84);
+    color: white;
+    position: fixed;
+    width: 70%;
+    font-size: 25px;
+    top: 0;
+    
+}
+.cabecera a {
+    text-decoration: none;
+    color: white;
+}
+.texto {
+    margin: 20px auto;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    font-size: 45px;
+    border-bottom: 10px solid rgb(1, 1, 1);
+    /* padding-bottom: 8rem; */
+    line-height: 2;
+    margin-bottom: 0px;
+    padding: 8rem 5rem;
+}
+.texto p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.intro {
+    margin: 0 0;
+    position: relative;
+}
+
+.website {
+    background-color: rgb(78, 228, 255);
+    margin: 0 0;
+    padding: 8rem 5rem;
+    border-bottom: 10px solid rgb(1, 1, 1);
+}
+.grande {
+    font-size: 80px;
+}
+.website p {
+    font-size: 30px;
+    line-height: 2;
+    
+
+}
+.custom {
+    padding: 10rem 10rem;
+       border-bottom: 10px solid rgb(1, 1, 1);    
+       line-height: 2;
+
+}
+.custom p {
+       font-size: 30px;
+}
+.app {
+    background-color: rgb(44, 43, 43);
+    color: white;
+    padding: 8rem 4rem;
+    line-height: 2;
+}
+.app p {
+    font-size: 30px;
+}
+.video {
+    padding: 8rem 5rem;
+    color: white;
+    background-color: rgb(29, 29, 29);
+}
+.ventana {
+    display: flex;
+    gap: 3rem;
+}
+.pie {
+    background-color: black;
+    padding: 2rem 5rem;
+    text-align: center;
+}
+.pie a {
+    color: white;
+    font-size: 30px;
+}
