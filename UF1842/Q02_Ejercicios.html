@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var mensaje = "Primer mensaje";
+        //Camel case
+        function crearMensaje(){
+            var mensaje = "Segundo mensaje";
+            alert(mensaje);
+        }
+
+       // crearMensaje();
+       // alert("Fuera de la función: " + mensaje)
+
+    </script>
+</head>
+<body>
+    <h1>Variable dentor y fuera de la función</h1>
+    <script>
+        let cantidad = 0;
+        let vacio = !cantidad;
+
+        console.log("Cantidad: " + cantidad);
+        console.log("vacio: " + vacio);
+
+        let mensaje = "Hola mundo";
+        let sinMensaje = !mensaje;
+        let conMensaje = !sinMensaje;
+        
+        console.log("Sin mensaje: " + sinMensaje);
+        console.log("Con mensaje: " + conMensaje);
+
+    </script>
+      <button onclick="creaTitulo()">
+         <h2>Titulo</h2>
+     </button>
+    <script>
+        function creaTitulo(){
+            document.write("Esto es un titulo");
+        }
+
+    </script>
+</body>
+</html>
