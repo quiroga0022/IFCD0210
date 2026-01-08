@@ -18,7 +18,7 @@
     </script>
 </head>
 <body>
-    <h1>Variable dentor y fuera de la función</h1>
+    <h1>Variable dentro y fuera de la función</h1>
     <script>
         let cantidad = 0;
         let vacio = !cantidad;
@@ -42,6 +42,30 @@
             document.write("Esto es un titulo");
         }
 
+    </script>
+    <script>
+        let nota = 9;
+if(nota < 5 ){
+    "SUSPENSO";
+}
+else {
+    if(nota < 6){
+        "APROBADO";
+    }
+    else {
+        if(nota < 7){
+            "BIEN";
+        }
+        else{
+            if(nota < 9){
+                "NOTABLE";
+            }
+            else{
+                "SOBRESALIENTE";
+            }
+        }
+    }
+}
     </script>
 </body>
 </html>
