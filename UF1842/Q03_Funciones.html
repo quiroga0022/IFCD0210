@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumar(a,b){
+            let total = a + b;
+            return total;
+        }
+
+        let resultado = sumar(3,2)
+        console.log(resultado);
+
+    </script>
+    <script>
+        function mayor(primero,segundo){ //El número X es mayor que Y
+            if(primero>segundo){
+                console.log(primero + "es mayor que" + segundo);
+            }
+            else if(primero<segundo){
+                console.log(primero + "es menor que" + segundo);
+            }
+            else {
+                console.log(primero + "es igual a" + segundo);
+            }
+        }
+    </script>
+    <script>
+        function menor(primero,segundo){
+            if(primero>segundo){
+                return primero + " es mayor que " + segundo;
+            }
+            if(primero == segundo){
+                return "Son iguales";
+            }
+            return segundo + " es mayor que " + primero;
+        }
+        let salida = menor(7,7)
+        console.log(salida)
+    </script>
+    <script>
+        function largo(cadena){
+            let letra = '';
+            let indice = 0;
+            while (letra != '$'){
+                letra = cadena[indice];
+                console.log(letra);
+                indice++;
+            }
+            return (indice - 1);
+        }
+        let rdo = largo ("Esta es una prueba$")
+        console.log(rdo)
+    </script>
+</body>
+</html>

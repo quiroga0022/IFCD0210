@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles While</title>
+</head>
+<body>
+    <script>
+        let vueltas = 0;
+        while(vueltas < 20){
+            console.log("Vuelta: " + vueltas);
+            vueltas +=1;
+        }
+    </script>
+    <script>
+        //Bucle infinito
+        let contador = 0;
+        console.log("Antes del bucle");
+        while(true){
+            console.log("Contador: " + contador);
+            contador ++;
+            if(contador == 7){
+                break;
+            }
+        }
+        console.log("Despues del bucle");
+    </script>
+    <script>
+        let atras = 10;
+        console.log("Antes del bucle");
+        while(true){
+            console.log("Contador: " + atras);
+            atras --;
+            if(atras < 0){
+                break;
+            }
+        }
+        console.log("Fin del bucle");
+    </script>
+    <script>
+        atras = 10;
+        console.log("Cuenta atrás")
+        while(atras >= 0){
+            console.log("Contador: " + atras)
+            atras --;
+        }
+        console.log("Feliz año nuevo cabrone")
+    </script>
+    <script>
+        let ct = -1;
+        while(ct <=20){
+            ct ++;
+            if(ct%2 == 1) { //Números impares
+            continue;
+            }
+            console.log("Número: " + ct)
+        }
+        console.log("Se acabó")
+    </script>
+</body>
+</html>

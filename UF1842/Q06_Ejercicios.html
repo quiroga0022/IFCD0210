@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+</head>
+<body>
+    <script>
+        //Ejercicio 1. Función que calcule el área de un rectángulo.
+        //Recibe como parámetros el largo y el ancho.
+        function area(base,altura){
+            let resultado = base * altura;
+            return resultado;
+        }
+
+    </script>
+    <script>
+        //Ejercicio 2. Hacer una función que calcule la tabla de multiplicar de un número
+        //que recibe como parámetro.
+
+        function tablaMul(factor){
+            for(let i = 1; i <= 10; i++){
+                console.log(factor + " * " + i + " = " + factor * i);
+            }
+            
+        }
+    </script>
+    <script>
+        //Ejercicio 3. Escribe una función que cuente las vocales de una cadena.
+
+        function cuentaVocales(cadena, vocales){
+            let contador = 0;
+            for(let letra of cadena){
+                if(vocales.includes(letra.toLowerCase())){
+                    contador++;
+                }
+            }
+            return contador;
+            }
+
+
+        function cuentaVocales2(cadena, vocales){
+            let contador = [0,1,2,3,4]
+            for(let i = 0; i < cadena.length; i++){
+                switch (cadena[i].toLowerCase()){
+                    case 'a': contador[0]++; break;
+                    case 'e': contador[1]++; break;
+                    case 'i': contador[2]++; break;
+                    case 'o': contador[3]++; break;
+                    case 'u': contador[4]++; break;
+                    }
+                }
+                return contador;
+            }
+
+        function positivos(lista){
+            let salida = [];
+            for(let i = 0; i < lista.length; i++){
+                if(lista[i] >= 0){
+                    salida.push(lista[i]);
+                }
+            }
+            return salida;
+        }
+
+        //Ejercicio 5. Hacer una función que sume todos los números impares
+        //menores a uno dado como parámetro.
+        function sumaImpares(numero){
+            let resultado = 0;
+            for(let i = 1; i<numero; i += 2){
+                resultado += i;
+            }
+            return resultado;
+        }
+        //Ejercicio 6. Hacer una función que encuentre los números comunes a dos listas
+        //pasadas como parámetros y los devuelva en otra lista.
+        function dosArrays(lista1, lista2){
+            let salida = [];
+            for(let num of lista1){
+                if(lista2.includes(num)){
+                    salida.push(num);
+                }
+            }
+            return salida;
+            }
+
+            //Ejercicio 7. Hacer una función que cuente los dígitos de un número.
+            function digitos(numero)
+                return numero.toString().length;
+            
+            //Ejercicio 8. Hacer una función que devuelva la cadena más larga de las contenidas
+            //en un array de cadenas que se pasa como parámetro.
+            function cadenaLarga(cadenas){
+                let salida = '';
+                for(let cadena of cadenas){
+                    if(salida.length < cadena.length){
+                        salida = cadena;
+                    }
+                }
+                return salida;
+            }
+
+    </script>
+</body>
+</html>
