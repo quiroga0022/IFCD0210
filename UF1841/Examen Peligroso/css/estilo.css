@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ html {
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .cabecera {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(245, 244, 244);
+    padding: 1.5rem;
+    color: #bab8b8;
+ }
+ .cabecera a {
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+ }
+ .lista {
+    display:flex;
+    justify-content: space-around;
+ }
+ .logo {
+    font-size:30px ;
+    font-weight: bold;
+ }
+ .imagen {
+    background-image:url(../img/pexels-valentin-ivantsov-2154772556-35286529.jpg);
+    /* background-repeat: no-repeat; */
+    width: 99vw;
+    height: 800px ;
+    margin: 0 0;
+    z-index: 0;
+    position: relative;
+
+ }
+ .intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    width: 800px;
+    bottom: 0;
+    left: 20%;
+    right: 20%;
+    height: 300px;
+    margin: 100px auto;
+    margin-bottom: 0px;
+ }
+ .intro p {
+   color: #9e9da0;
+ }
+ .ventanas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5 px;
+    margin: 100px auto;
+    text-align: center;
+ }
+ .tarjetas img {
+   max-width: 300px;
+   max-height: auto;
+   justify-content: center;
+   text-align: center;
+ }
+ .tarjetas p {
+   color: gray;
+ }
+ .pie {
+   padding: 60px ;
+   background-color: #cccad1;
+   margin-bottom: 0px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+ }
+ .boton {
+   background-color: black;
+   border-radius: 8px;
+   align-items: center;
+   text-decoration: none;
+ }
+ .boton a {
+   color: #cccad1;
+   text-decoration: none;
+ }
+ .contenedor {
+   padding: 150px 0;
+   display: flex;
+   justify-content: space-between;
+   background-color: rgb(245, 244, 244);
+   margin:0px auto;
+ }
+ .flex {
+   display: flex;
+   margin: 0px auto;
+   padding:50px 250px;
+   justify-content: space-around;
+ }
+ .flex img {
+   width: 150%;
+ }
+ .flex h2 {
+   padding-bottom: 50px;
+ }
+ .flex p{
+   color: #bab8b8;
+   font-size: 20px;
+ }
+ .central {
+   background-color: rgb(245, 244, 244);
+   display: flex;
+   flex-direction: column;
+   padding-left: 300px;
+   height: 500px;
+   padding-top: 40px;
+
+
+ }
+ .touch p{
+   color: #bab8b8;
+   margin: ;
+ }
+ .touch h2{
+   padding-bottom: 30px;
+   padding-top: 80px;
+ }
+.touch {
+   line-height: 2;
+}
