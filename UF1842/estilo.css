@@ -1,0 +1,20 @@
+        @import url('https://fonts.cdnfonts.com/css/seven-segment');
+
+        p {
+        font-family: 'Seven Segment', sans-serif;
+        font-size: 60px;
+        font-weight: bold;                             
+        }
+
+        .parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 3 / 6; }
+.div2 { grid-area: 3 / 1 / 4 / 3; }
+.div3 { grid-area: 3 / 3 / 4 / 4; }
+.div4 { grid-area: 3 / 4 / 4 / 6; }

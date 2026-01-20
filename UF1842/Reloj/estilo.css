@@ -1,0 +1,58 @@
+        @import url('https://fonts.cdnfonts.com/css/seven-segment');
+
+        p {
+
+            /* font-size: 60px; */
+
+        }
+
+        .parent {
+            display: grid;
+            font-weight: bold;
+            font-family: 'Seven Segment', sans-serif;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            margin: 200px;
+            border: 1px solid blue;
+            color: greenyellow;
+            background-color: black;
+        }
+
+        .div1 {
+            grid-area: 1 / 1 / 3 / 6;
+            font-size: 2300px;
+            border: 1px solid blue;
+            text-align: center;
+
+        }
+
+        .div2 {
+            grid-area: 3 / 1 / 4 / 3;
+            border: 1px solid blue;
+            text-align: center;
+            padding-top: 30px;
+
+
+        }
+
+        .div3 {
+            grid-area: 3 / 3 / 4 / 4;
+            border: 1px solid blue;
+            text-align: center;
+            padding-top: 30px;
+
+
+
+        }
+
+        .div4 {
+            grid-area: 3 / 4 / 4 / 6;
+            border: 1px solid blue;
+            text-align: center;
+            padding-top: 30px;
+
+
+
+        }
