@@ -19,7 +19,7 @@ function adivinar(e){
         intentos ++;
 
         if(num == objetivo){
-            resultado.innerHTML = "ENHORABUENA has acertado.";
+            resultado.innerHTML = "¡ENHORABUENA! Eres más BETICO que Lopera.";
             btn_enviar.disabled = true;
             numero.disabled = true;
         }
@@ -43,3 +43,4 @@ function adivinar(e){
 function reiniciar(){
     window.location.reload();
 }
+console.log(objetivo)
