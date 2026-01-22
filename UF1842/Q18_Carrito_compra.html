@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Almacen Don Manolo</h1>
+    <div class="estantes">
+        <div class="producto" id="prod1" data-precio="12.89">
+            <h3 class="nombre">Zapatillas</h3>
+            <img src="" alt="" class="foto">
+            <p class="descripcion"></p>
+            <span class="precio">Precio: 12.89€</span>
+            <button class="boton_comprar">Comprar</button>
+        </div>
+        <div class="producto" id="prod2" data-precio="22.30">
+            <h3 class="nombre">Jersey</h3>
+            <img src="" alt="" class="foto">
+            <p class="descripcion"></p>
+            <span class="precio">Precio: 22.30€</span>
+            <button class="boton_comprar">Comprar</button>
+        </div>
+    </div>
+
+    <div class="carrito">
+        <ul id="lista">
+            <li>Zapatillas 12.89</li>
+            <li>Vasos de café 23.30</li>
+
+        </ul>
+        <p>Total: <span id="total">0</span>€</p>
+        <button>Pagar</button>
+
+    </div>
+
+    <script>
+        let productos = document.querySelectorAll('.producto');
+        let total = document.getElementById('total');
+        let lista_carrito = document.getElementById('lista');
+        
+
+        for(let i=0; i< productos.length; i++){
+            let boton = productos[i].querySelector('.boton_comprar');
+            let precio = productos[i].getAttribute('data-precio');
+            let nombre = productos[i].querySelector('.nombre');
+            console.log(precio);
+            boton.addEventListener('click', function(){
+                let li = document.createElement('li');
+                li.innerHTML = nombre.textContent + " " + precio.textContent + "€";
+                lista_carrito.appendChild(li);
+                total.innerHTML = parseFloat(precio) + parseFloat(total.innerHTML)
+            })
+        }
+        // // -----------PAGAR----------
+        let pagar = document.getElementById('pagar');
+        pagar.addEventListener('click', function(){
+            for(let fila of lista_carrito.querySelectorAll('li')){
+                fila.remove();
+            }
+            total.innerHTML = 0;
+        }
+
+        )
+    </script>
+</body>
+</html>
