@@ -1,0 +1,14 @@
+[
+{
+    "nombre":"Jorge",
+    "libros":["uno","dos","tres"]
+}
+{
+    "nombre":"Maria",
+    "libros":[
+        "uno",
+        "dos",
+        "tres"
+    ]
+}
+]

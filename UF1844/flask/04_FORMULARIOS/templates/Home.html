@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios | J. Quiroga</title>
+</head>
+<body>
+    <h1>
+        Formularios
+    </h1>
+    <form action="" method="post"></form>
+    <fieldset>
+        <legend>Elige tu país</legend>
+    <label for="">Paises</label>
+    <select name="paises" id="">
+        <option value="-">--Seleccione--</option>
+        {% for p in paises %}
+        <option value="{{p}}">{{p}}</option>
+        {% endfor %}
+    </select>
+    </fieldset>
+    <br>
+<fieldset>
+    <legend>Elige tu género</legend>
+    <label for="">Géneros</label> <br>
+        {% for g in generos %}
+        <input type="radio" name="genero" id="" value="{{g}}">{{g}}
+        {% endfor %}
+    </select>
+</fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Elige tus hobbies</legend>
+        <label for="">Hobbies</label>
+        {% for h in hobbies %}
+            <input type="checkbox" name="hobbies" id="" value="{{h}}">{{h}}
+        {% endfor %}
+        </fieldset>
+</body>
+</html>
