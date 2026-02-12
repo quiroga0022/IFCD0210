@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Array números</title>
+</head>
+<body>
+
+<ul id="lista"></ul>
+
+<script>
+let numeros = [3, 7, 2, 9, 5, 10];
+let suma = 0;
+let lista = document.getElementById("lista");
+
+
+for (let i = 0; i < numeros.length; i++) {
+  suma += numeros[i]; 
+
+  
+  let li = document.createElement("li");
+  li.textContent = numeros[i];
+  lista.appendChild(li);
+}
+
+
+console.log("La suma total es:", suma);
+</script>
+
+</body>
+</html>

@@ -9,14 +9,16 @@
     <h1>
         Formularios
     </h1>
-    <form action="" method="post"></form>
+    <form action="{url_for('index')}" method="post">
     <fieldset>
         <legend>Elige tu país</legend>
     <label for="">Paises</label>
     <select name="paises" id="">
         <option value="-">--Seleccione--</option>
         {% for p in paises %}
-        <option value="{{p}}">{{p}}</option>
+        <option value="{{p}}"
+        {% if estado.get('pais') == p %} selected {%endif%}
+        >{{p}}</option>
         {% endfor %}
     </select>
     </fieldset>
@@ -25,7 +27,9 @@
     <legend>Elige tu género</legend>
     <label for="">Géneros</label> <br>
         {% for g in generos %}
-        <input type="radio" name="genero" id="" value="{{g}}">{{g}}
+        <input type="radio" name="genero" id="" value="{{g}}"
+        {% if estado.get('genero') == g %}checked {% endif %}
+        >{{g}}
         {% endfor %}
     </select>
 </fieldset>
@@ -33,10 +37,17 @@
 
     <fieldset>
         <legend>Elige tus hobbies</legend>
-        <label for="">Hobbies</label>
+        <label for="">Hobbies</label> <br>
         {% for h in hobbies %}
-            <input type="checkbox" name="hobbies" id="" value="{{h}}">{{h}}
+            <input type="checkbox" name="hobbies" id="" value="{{h}}"
+            {% if h in estado.get('hobbies', []) %} checked {% endif %}
+            >{{h}}
         {% endfor %}
         </fieldset>
+        <button type="submit">Guardar</button>
+        <br>
+        </form>
+        <button onclick="window.location.href"></button>
+
 </body>
 </html>
