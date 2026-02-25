@@ -1,0 +1,9 @@
+Ejercicio 3. Usabilidad y accesibilidad
+
+Código corregido:
+
+<img src="grafico.png" alt="Gráfico de barras">
+
+  <button aria-label="Cerrar ventana">
+    <span aria-hidden="true">X</span>
+  </button>

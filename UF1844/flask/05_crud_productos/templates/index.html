@@ -4,6 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edición de productos</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo general */
+body {
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Título */
+h1 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Formularios tipo tarjeta */
+form {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs y selects */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Efecto focus */
+input[type="text"]:focus,
+select:focus {
+    border-color: #4e73df;
+    outline: none;
+    box-shadow: 0 0 5px rgba(78, 115, 223, 0.4);
+}
+
+/* Botones */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4e73df;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover botón principal */
+button:hover {
+    background-color: #2e59d9;
+}
+
+/* Botón borrar */
+form:last-of-type button {
+    background-color: #e74a3b;
+}
+
+form:last-of-type button:hover {
+    background-color: #c0392b;
+}
+    </style>
 </head>
 <body>
     <h1>
@@ -16,8 +105,31 @@
             {% for p in productos %}
             <option value="{{p.id}}">{{p.nombre}}</option>
             {% endfor %}
-        
         </select>
     </form>
+
+    <form action="{{url_for('actualizar_producto', prod_id=producto.id)if producto else url_for('crear_producto')}}" method="POST">
+        <label for="">Nombre: </label>
+        <input type="text" name="nombre" id="" value="{{producto.nombre}}">
+        <label for="">Precio: </label>
+        <input type="text" name="precio" id="" value="{{producto.precio}}">
+        <label for="">Categoria: </label>
+        <select name="categoria" id="">
+            {% for c in categorias %}
+            <option value="{{c.id}}"
+            {% if producto.id_categoria == c.id %}selected{% endif %}
+            >{{c.nombre}}
+            </option>
+            {% endfor %}
+        </select>
+        <button type="submit">{{'Actualizar' if producto else 'Crear'}}</button>
+
+    </form>
+    {% if producto %}
+    <form action="{{url_for('borrar_producto', prod_id = producto.id)}}" method="post">
+            <button type="submit">Borrar</button>
+    </form>
+    {% endif %}
+
 </body>
 </html>

@@ -5,45 +5,32 @@
             "nombre": "Electrónica"
         },
         {
-            "id": 2,
-            "nombre": "Ropa"
+            "id":2,
+            "nombre":"Ropa"
         },
         {
-            "nombre": "Jardín"
+            "id":3,
+            "nombre":"Jardín"
         }
     ],
     "productos":[
         {
-            "id": 1,
+            "id": 1 ,
             "nombre": "Portátil",
             "precio": 1230,
-            "id_categoria": 1
+            "id_categoria": 1 
         },
         {
             "id": 2,
             "nombre": "Camiseta",
-            "precio": 220,
-            "id_categoria": 2
+            "precio": 34,
+            "id_categoria": 2 
         },
         {
             "id": 3,
-            "nombre": "Hamacas",
-            "precio": 300,
+            "nombre": "Hamaca",
+            "precio": 345,
             "id_categoria": 3
-        },
-        {
-            "id": 4,
-            "nombre": "Televisión",
-            "precio": 1685,
-            "id_categoria": 4
-        },
-        {
-            "id": 5,
-            "nombre": "Sofá",
-            "precio": 1235,
-            "id_categoria": 5
-        }
-
-            
+        }                     
     ]
 }

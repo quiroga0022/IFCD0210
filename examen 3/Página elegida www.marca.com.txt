@@ -1,0 +1,67 @@
+Página elegida: www.marca.com
+
+Evaluación de aspectos básicos
+
+1. Claridad de botones y etiquetas
+
+Los botones principales como “Fútbol”, “Real Madrid”, “Barcelona”, etc. son claros y fáciles de entender.
+
+Algunos titulares parecen enlaces, pero no siempre es evidente si llevan a una noticia completa.
+
+2. Consistencia de navegación
+
+El menú principal se mantiene en la parte superior, lo que ayuda a la navegación.
+
+Sin embargo, hay muchos submenús y secciones que pueden cambiar dependiendo de la noticia, lo que puede generar algo de confusión.
+
+3. Retroalimentación del sistema
+
+Cuando se hace clic en una noticia, la página carga correctamente y muestra el contenido.
+
+No siempre es claro cuándo un enlace abre publicidad o contenido patrocinado hasta que ya se ha hecho clic.
+
+4. Jerarquía visual del contenido
+
+Las noticias principales están destacadas con imágenes grandes y titulares llamativos.
+
+Hay demasiados elementos en pantalla (anuncios, videos, banners), lo que puede distraer y dificultar identificar lo más importante.
+
+2. Problemas de usabilidad detectados
+
+Exceso de publicidad, lo que dificulta la lectura y distrae al usuario.
+
+Demasiada información en la página principal, lo que puede saturar visualmente.
+
+Dificultad para distinguir claramente contenido editorial de contenido patrocinado.
+
+3. Mejoras propuestas
+
+Reducir o reorganizar la publicidad, para que no interfiera tanto con la lectura.
+
+Simplificar la página principal, mostrando menos noticias pero mejor organizadas para mejorar la claridad visual.
+
+Conclusión
+
+Marca.com es una página clara en cuanto a temática y secciones principales, pero y tiene problemas de saturación visual debido al exceso de contenido y publicidad. Con algunos ajustes en organización y reducción de elementos distractores, la experiencia de usuario podría mejorar considerablemente.
+
+Ejercicio 2 — Mejora de accesibilidad en HTML
+
+código corregido:
+
+<img src="grafico.png" alt="Gráfico de barras">
+
+  <button aria-label="Cerrar ventana">
+    <span aria-hidden="true">X</span>
+  </button>
+
+Ejercicio 3 - Uso del teclado
+
+Con la tecla TAB es posible acceder a enlaces del menú principal (Fútbol, Baloncesto, Motor, etc.).
+
+También se puede acceder a titulares de noticias y algunos botones.
+
+Sin embargo, hay muchos elementos (publicidad, enlaces secundarios) que hacen que la navegación con TAB sea muy larga y poco eficiente.
+
+Algunos elementos interactivos, como ciertos menús desplegables, no siempre son fáciles de activar solo con teclado.
+
+Valoración básica: Acceso parcial, pero poco optimizado.
