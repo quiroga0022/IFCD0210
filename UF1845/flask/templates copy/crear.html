@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Producto</title>
+</head>
+<body>
+    <h1>Crear producto</h1>
+    <form action="" method="post">
+        <label for="">Código</label>
+        <input type="text" name="codigo">
+        <label for="">Nombre</label>
+        <input type="text" name="nombre">
+
+        <label for="">Cantidad</label>
+        <input type="text" name="cantidad">
+        <label for="">Precio</label>
+        <input type="text" name="precio">
+        <label for="">Fecha caducidad</label>
+        <input type="date" name="fecha_caducidad">
+        <button type="submit">Crear</button>
+    </form>
+    <p>
+        <a href="{{url_for('index')}}"></a>
+    </p>
+
+</body>
+</html>
