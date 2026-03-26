@@ -4,6 +4,7 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+    
         {
             "name": "Depurador de Python: Flask",
             "type": "debugpy",
@@ -15,25 +16,8 @@
             },
             "args": [
                 "run",
-                "--no-debugger",
-                "--no-reload"
-            ],
-            "jinja": true,
-            "autoStartBrowser": false
-        },
-        {
-            "name": "Depurador de Python: Flask",
-            "type": "debugpy",
-            "request": "launch",
-            "module": "flask",
-            "env": {
-                "FLASK_APP": "app.py",
-                "FLASK_DEBUG": "1"
-            },
-            "args": [
-                "run",
-                "--no-debugger",
-                "--no-reload"
+                "--debugger",
+                "--reload"
             ],
             "jinja": true,
             "autoStartBrowser": false

@@ -1,0 +1,5 @@
+HOST = 'localhost'
+USER = 'root'
+PASSWORD = 'password_que_quieras'
+DATABASE = 'flask_blog'
+PORT = '3360'

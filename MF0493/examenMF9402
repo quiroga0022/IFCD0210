@@ -1,0 +1,106 @@
+1. Crea una función python que valide una contraseña:
+La contraseña debe cumplir:
+● Mínimo 8 caracteres
+● Al menos una mayúscula
+● Al menos un número
+● Al menos un carácter especial
+Devuelve:
+● "Válida"
+● o el motivo del error
+
+def validar_contraseña(password):
+
+    if len(password) < 8:
+        return "Muy corta"
+
+    mayuscula = False
+    numero = False
+    especial = False
+
+    for letra in password:
+        if letra.isupper():
+            mayuscula = True
+        elif letra.isdigit():
+            numero = True
+        elif not letra.isalnum():
+            especial = True
+
+    if mayuscula == False:
+        return "Falta mayúscula"
+    
+    if numero == False:
+        return "Falta número"
+    
+    if especial == False:
+        return "Falta carácter especial"
+
+    return "Válida"
+
+
+2. Utilizando la base de datos de jardinería, realiza las siguientes consultas:
+a. Devuelve un listado de todos los pedidos que fueron rechazados en 2009.
+
+Select p.pedido from pedido p
+WHERE estado = 'Rechazado'
+AND YEAR(fecha_pedido) = 2009;
+
+b. Devuelve un listado de todos los pedidos que han sido entregados en el mes de
+enero de cualquier año.
+
+SELECT *
+FROM pedidos
+WHERE estado = 'Entregado'
+AND MONTH(fecha_entrega) = 1;
+
+c. Devuelve un listado con todos los productos que pertenecen a la gama
+ornamentales y que tienen más de 100 unidades en stock. El listado deberá
+estar ordenado por su precio de venta, mostrando en primer lugar los de mayor
+precio.
+
+SELECT *
+FROM productos
+WHERE gama = 'Ornamentales'
+AND cantidad_en_stock > 100
+ORDER BY precio_venta DESC;
+
+d. Devuelve un listado de las diferentes gamas de producto que ha comprado cada
+cliente.
+
+SELECT DISTINCT c.nombre_cliente, p.gama
+FROM clientes c
+JOIN pedidos pe ON c.id_cliente = pe.id_cliente
+JOIN detalle_pedido dp ON pe.id_pedido = dp.id_pedido
+JOIN productos p ON dp.id_producto = p.id_producto;
+
+3. Dado este JSON:
+[
+{"nombre": "Ana", "edad": 25},
+{"nombre": "Luis", "edad": 17},
+{"nombre": "Carlos", "edad": 30}
+]
+Crea un programa python que:
+1. Filtre solo los mayores de edad
+2. Muestre sus nombres
+3. Calcule la edad media
+
+datos = [
+    {"nombre": "Ana", "edad": 25},
+    {"nombre": "Luis", "edad": 17},
+    {"nombre": "Carlos", "edad": 30}
+]
+
+mayores = []
+
+for persona in datos:
+    if persona["edad"] >= 18:
+        mayores.append(persona)
+
+for persona in mayores:
+    print(persona["nombre"])
+
+suma = 0
+for persona in mayores:
+    suma = suma + persona["edad"]
+
+media = suma / len(mayores)
+print("Media:", media)

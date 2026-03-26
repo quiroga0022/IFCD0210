@@ -1,0 +1,76 @@
+Parte práctica
+1. Dado el siguiente sistema:
+● Un navegador muestra una web
+● Un servidor procesa peticiones
+● Una base de datos almacena usuarios
+Responde:
+1. ¿Qué parte es el frontend?
+Un navegador muestra una web
+2. ¿Qué parte es el backend?
+El servidor que procesa peticiones y la base de datos
+3. ¿Es una arquitectura distribuida? ¿Por qué?
+Sí, porque hay componentes separados que se unen entre si.
+
+2. Tienes esta API:
+GET /usuarios
+POST /usuarios
+GET /usuarios/5
+DELETE /usuarios/5
+
+Responde:
+1. ¿Qué hace cada endpoint?
+GET /usuarios
+Obtiene todos los usuarios
+POST /usuarios
+Crea un nuevo usuario
+GET /usuarios/5
+Obtiene el usuario con id=5
+DELETE /usuarios/5
+Borra el usuario con id=5
+
+2. ¿Cuál usarías para crear un usuario?
+POST
+3. ¿Cuál usarías para eliminarlo?
+DELETE
+
+
+3. Diseña una API para una aplicación de tareas (to-do list).
+Define al menos 4 endpoints:
+● Obtener tareas
+● Crear tarea
+● Actualizar tarea
+● Eliminar tarea
+
+GET/tareas - Obtener todas las tareas
+
+POST/tareas - Crear una nueva tarea
+
+PUT/tareas/{id} - Actualizar una tarea existente
+
+DELETE/tareas/{id} - Eliminar una tarea
+
+4. Dada esta respuesta de una API:
+{
+"id": 1,
+"nombre": "Juan",
+"email": "juan@email.com",
+"activo": true
+}
+Responde:
+1. ¿Qué tipo de formato es este?
+JSON
+2. ¿Qué valor tiene "nombre"?
+JUAN
+3. ¿El usuario está activo?
+SI
+4. ¿Qué tipo de dato es "activo"?
+BOOLEANO
+
+5. Ordena correctamente estos pasos:
+1. El servidor consulta la base de datos
+2. El navegador muestra los datos
+3. El usuario hace una petición
+4. El servidor envía una respuesta
+Escribe el orden correcto (1 → 4)
+
+3, 1, 4, 2
